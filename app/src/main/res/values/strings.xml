@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">TestDragAndDrop</string>
+    <string name="type">Type:</string>
+    <string name="status">Status:</string>
+    <string name="working">Working</string>
+    <string name="Detail">Detail</string>
+    <string name="description">Description</string>
+    <string name="people">People</string>
+    <string name="hung">Hung</string>
+    <string name="loan">Loan</string>
+    <string name="date">Date</string>
+    <string name="ddmmyy">5/Mar/2017 00:00</string>
+    <string name="created">Created:</string>
+    <string name="timetracking">Time Tracking</string>
+    <string name="start">Start</string>
+    <string name="attachnents">Attachments</string>
+    <string name="img_default_desc">IMG</string>
+    <!-- navigation drawber menu labels-->
+    <string name="dropen">Open</string>
+    <string name="drclose">Close</string>
+</resources>

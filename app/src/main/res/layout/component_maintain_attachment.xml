@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="148dp"
+              android:orientation="vertical"
+              android:padding="8dp">
+
+    <LinearLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_attached"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/header_view"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            tools:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/before_tab"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/header_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp" />
+
+                <View
+                    android:id="@+id/separator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@android:color/holo_green_dark" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@id/before_tab"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/after_tab"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_before"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:gravity="center"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="Before" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:background="@android:color/holo_green_dark" />
+
+                <View
+                    android:id="@+id/before_indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@android:color/holo_green_dark" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@id/after_tab"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_after"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:gravity="center"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="After" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:background="@android:color/holo_green_dark" />
+
+                <View
+                    android:id="@+id/after_indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@android:color/holo_green_dark" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/before"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:id="@+id/after"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+        </HorizontalScrollView>
+    </LinearLayout>
+</LinearLayout>
